@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome -->
+    <link href="/fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet" />
+    <title>Chat UI</title>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <nav class="top-nav">
+          <div class="brand">
+            <img
+              src="images/yekaterinburg-metro-logo.png"
+              width="40px"
+              alt=""
+            />
+          </div>
+          <ul>
+            <div class="icons">
+              <li><a href="#" class="far fa-envelope"></a></li>
+            </div>
+            <div class="icons">
+              <div class="notification-icon">
+                <span class="not-amount">5</span>
+              </div>
+              <li><a href="#" class="far fa-bell"></a></li>
+            </div>
+            <li>
+              <div class="my-account">
+                <img
+                  class="profile-pic"
+                  src="images/alex-suprun-ZHvM3XIOHoE-unsplash.jpg"
+                  alt=""
+                />
+                <select name="account" id="acc-dropdown">
+                  <option value="">Bold Masi</option>
+                  <option value="">My profile</option>
+                  <option value="">Settings</option>
+                  <option value="">Log out</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="side-nav">
+          <ul>
+            <li><a href="#" class="fas fa-th-large"></a></li>
+            <li class="active"><a href="#" class="far fa-comment-dots"></a></li>
+            <li><a href="#" class="fas fa-share-alt"></a></li>
+            <li><a href="#" class="fas fa-hashtag"></a></li>
+            <li><a href="#" class="fas fa-satellite-dish"></a></li>
+            <li><a href="#" class="fas fa-bars"></a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container">
+        <div class="chat-list-container">
+          <div class="search-box">
+            <div class="chat-list-header">
+              <h4>Search Messages</h4>
+            </div>
+            <div class="search-wrapper">
+              <input type="text" id="search-bar" />
+            </div>
+          </div>
+          <hr />
+          <div class="chat-wrapper">
+            <div class="chat-list-header">
+              <h4>Recent Talks</h4>
+              <span
+                ><select name="" id="chat-filter">
+                  <option value="">All</option>
+                </select></span
+              >
+            </div>
+            <div class="chat-list">
+              <div class="user-chat-box">
+                <div class="user-image">
+                  <div class="circle online-circle"></div>
+                  <img
+                    class="profile-pic"
+                    src="images/james-timothy-Kh3aTWwMH1I-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="user-info">
+                  <p class="user-name">Hero Alom</p>
+                  <p class="unread-message">Can you please send me</p>
+                  <span class="time">02:19 pm</span>
+                </div>
+              </div>
+              <div class="user-chat-box">
+                <div class="user-image">
+                  <div class="circle offline-circle"></div>
+                  <img
+                    class="profile-pic"
+                    src="images/cesar-rincon-XHVpWcr5grQ-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="user-info">
+                  <p class="user-name">Kevin Peterson</p>
+                  <p class="user-message">Can you please send me</p>
+                  <span class="time">02:19 pm</span>
+                </div>
+              </div>
+              <div class="user-chat-box active-chat">
+                <div class="user-image">
+                  <div class="circle online-circle"></div>
+                  <img
+                    class="profile-pic"
+                    src="images/christian-buehner-6YQmQgcQ0VA-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="user-info">
+                  <p class="user-name">Jason Roy</p>
+                  <p class="user-message">Can you please send me</p>
+                  <span class="time">02:19 pm</span>
+                </div>
+              </div>
+              <div class="user-chat-box">
+                <div class="user-image">
+                  <div class="circle offline-circle"></div>
+                  <img
+                    class="profile-pic"
+                    src="images/farhan-shaikh-uk2iuNP-BzM-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="user-info">
+                  <p class="user-name">Peterson Song</p>
+                  <p class="user-message">Can you please send me</p>
+                  <span class="time">02:19 pm</span>
+                </div>
+              </div>
+              <div class="user-chat-box">
+                <div class="user-image">
+                  <div class="circle online-circle"></div>
+                  <img
+                    class="profile-pic"
+                    src="images/janko-ferlic-qzDF5PNEWKc-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="user-info">
+                  <p class="user-name">Janko Ferlik</p>
+                  <p class="user-message">Can you please send me</p>
+                  <span class="time">02:19 pm</span>
+                </div>
+              </div>
+              <div class="user-chat-box">
+                <div class="user-image">
+                  <div class="circle offline-circle"></div>
+                  <img
+                    class="profile-pic"
+                    src="images/jonathan-cooper-ViyA5myhBVw-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="user-info">
+                  <p class="user-name">Jonathan</p>
+                  <p class="user-message">Can you please send me</p>
+                  <span class="time">02:19 pm</span>
+                </div>
+              </div>
+              <div class="user-chat-box">
+                <div class="user-image">
+                  <div class="circle offline-circle"></div>
+                  <img
+                    class="profile-pic"
+                    src="images/james-timothy-Kh3aTWwMH1I-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="user-info">
+                  <p class="user-name">Hero Alom</p>
+                  <p class="user-message">Can you please send me</p>
+                  <span class="time">02:19 pm</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="chat-screen-container">
+          <div class="chat-screen-header">
+            <div class="friend-profile">
+              <img
+                src="images/christian-buehner-6YQmQgcQ0VA-unsplash.jpg"
+                alt=""
+                class="profile-pic"
+              />
+              <span class="friend-name"> Jason Roy </span>
+            </div>
+          </div>
+          <div class="chat-content">
+            <div class="message-wrapper friend-message">
+              <img
+                src="images/christian-buehner-6YQmQgcQ0VA-unsplash.jpg"
+                alt=""
+                class="profile-pic"
+              />
+              <div class="message-box">
+                <div class="message-text">
+                  <p>
+                    Hi. I have completed our new I have completed our new I have
+                    completed our new project UI
+                  </p>
+                </div>
+                <span class="message-time"
+                  >10 min ago<i class="fas fa-check"></i
+                ></span>
+              </div>
+            </div>
+            <div class="message-wrapper my-message">
+              <img
+                src="images/alex-suprun-ZHvM3XIOHoE-unsplash.jpg"
+                alt=""
+                class="profile-pic"
+              />
+              <div class="message-box">
+                <div class="message-text">
+                  <p>Can you please send me the file right now? okay</p>
+                </div>
+                <span class="message-time"
+                  >10 min ago<i class="fas fa-check"></i
+                ></span>
+              </div>
+            </div>
+            <div class="message-wrapper friend-message">
+              <img
+                src="images/christian-buehner-6YQmQgcQ0VA-unsplash.jpg"
+                alt=""
+                class="profile-pic"
+              />
+              <div class="message-box">
+                <div class="message-text">
+                  <p>
+                    Hi. I have completed our new I have completed our new I have
+                    completed our new project UI
+                  </p>
+                </div>
+                <span class="message-time"
+                  >10 min ago<i class="fas fa-check"></i
+                ></span>
+              </div>
+            </div>
+            <div class="message-wrapper my-message">
+              <img
+                src="images/alex-suprun-ZHvM3XIOHoE-unsplash.jpg"
+                alt=""
+                class="profile-pic"
+              />
+              <div class="message-box">
+                <div class="message-text">
+                  <p>
+                    You can attach that file here I have completed our new Ok.
+                    You can attach that file here I or you can also send mail
+                  </p>
+                </div>
+                <span class="message-time"
+                  >10 min ago<i class="fas fa-check"></i
+                ></span>
+              </div>
+            </div>
+            <div class="message-wrapper my-message">
+              <img
+                src="images/alex-suprun-ZHvM3XIOHoE-unsplash.jpg"
+                alt=""
+                class="profile-pic"
+              />
+              <div class="message-box">
+                <div class="message-text">
+                  <p>Can you please send me the file right now? okay</p>
+                </div>
+              </div>
+            </div>
+            <div class="message-wrapper my-message">
+              <img
+                src="images/alex-suprun-ZHvM3XIOHoE-unsplash.jpg"
+                alt=""
+                class="profile-pic"
+              />
+              <div class="message-box">
+                <div class="message-text">
+                  <p>Can you please send me the file right now? okay</p>
+                </div>
+              </div>
+            </div>
+            <div class="message-wrapper my-message">
+              <img
+                src="images/alex-suprun-ZHvM3XIOHoE-unsplash.jpg"
+                alt=""
+                class="profile-pic"
+              />
+              <div class="message-box">
+                <div class="message-text">
+                  <p>Can you please send me the file right now? okay</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="message-input">
+            <i class="fas fa-paperclip"></i>
+            <i class="far fa-smile"></i>
+            <input type="text" placeholder="Type a message..." />
+            <i class="fas fa-paper-plane"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
